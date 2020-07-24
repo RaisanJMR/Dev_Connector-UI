@@ -1,6 +1,114 @@
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .bg-primary {
   background-color: #17a2b8;
   color: #ffffff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #cccccc;
+}
+
+.bg-dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.bg-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+  color: #333;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #cccccc;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333333;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  border-radius: 1.2rem;
+  transition: all 0.2s ease-in;
+}
+
+.btn.btn-primary {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  background: #1abad3;
+}
+
+.btn.btn-dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.btn.btn-dark:hover {
+  background: #424951;
+}
+
+.btn.btn-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.btn.btn-success:hover {
+  background: #2ec04f;
+}
+
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: #333;
+}
+
+.btn.btn-danger:hover {
+  background: #e14f5d;
+}
+
+.btn:hover {
+  background: #626d78;
+  color: #ffffff;
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -10,7 +118,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -48,10 +156,29 @@ img {
 }
 
 .navbar a {
+  color: #fff;
   padding: 0.45rem;
   margin: 0 0.025rem;
 }
 
 .navbar a:hover {
   color: #17a2b8;
+}
+
+.landing {
+  position: relative;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
