@@ -108,6 +108,16 @@
   color: #17a2b8;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #cccccc;
+  margin: 1.5rem 0;
+}
+
 .bg-primary {
   background-color: #17a2b8;
   color: #ffffff;
@@ -131,7 +141,7 @@
 
 .bg-danger {
   background-color: #dc3545;
-  color: #333;
+  color: #ffffff;
 }
 
 .bg-white {
@@ -183,7 +193,7 @@
 
 .btn.btn-danger {
   background-color: #dc3545;
-  color: #333;
+  color: #ffffff;
 }
 
 .btn.btn-danger:hover {
@@ -192,6 +202,34 @@
 
 .btn:hover {
   background: #626d78;
+  color: #ffffff;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.alert.alert-primary {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+
+.alert.alert-dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.alert.alert-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.alert.alert-danger {
+  background-color: #dc3545;
   color: #ffffff;
 }
 
@@ -236,7 +274,7 @@
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -299,4 +337,67 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: "top top" "about about" "exp edu" "github github";
+  grid-gap: 1rem;
+}
+
+.profile-grid .profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-grid .profile-top img {
+  width: 250px;
+}
+
+.profile-grid .profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.profile-grid .profile-top .icons a:hover {
+  color: #343a40;
+}
+
+.profile-grid .profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-grid .profile-about .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-grid .profile-exp {
+  grid-area: exp;
+}
+
+.profile-grid .profile-edu {
+  grid-area: edu;
+}
+
+.profile-grid .profile-github {
+  grid-area: github;
 }
