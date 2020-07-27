@@ -233,6 +233,36 @@
   color: #ffffff;
 }
 
+.badge {
+  border-radius: 0.9rem;
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: #f4f4f4;
+  color: #333333;
+}
+
+.badge.badge-primary {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+
+.badge.badge-dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.badge.badge-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.badge.badge-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
 .dark-overlay {
   height: 100%;
   width: 100%;
@@ -347,7 +377,7 @@ img {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 0.9rem;
 }
 
 .profile-grid {
@@ -357,6 +387,7 @@ img {
 }
 
 .profile-grid .profile-top {
+  border-radius: 0.9rem;
   grid-area: top;
   display: flex;
   flex-direction: column;
@@ -379,6 +410,7 @@ img {
 }
 
 .profile-grid .profile-about {
+  border-radius: 0.9rem;
   grid-area: about;
   text-align: center;
 }
@@ -391,13 +423,47 @@ img {
 }
 
 .profile-grid .profile-exp {
+  border-radius: 0.9rem;
   grid-area: exp;
 }
 
 .profile-grid .profile-edu {
+  border-radius: 0.9rem;
   grid-area: edu;
+}
+
+.profile-grid .profile-exp > div,
+.profile-grid .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-grid .profile-exp:last-child,
+.profile-grid .profile-edu:last-child {
+  border: none;
+}
+
+.profile-grid .profile-exp p,
+.profile-grid .profile-edu p {
+  margin: 0.5rem 0;
 }
 
 .profile-grid .profile-github {
   grid-area: github;
+}
+
+.profile-grid .profile-github .repo {
+  border-radius: 0.9rem;
+  display: flex;
+}
+
+.profile-grid .profile-github .repo > div:first-child {
+  flex: 7;
+  flex-basis: 70%;
+}
+
+.profile-grid .profile-github .repo > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
 }
